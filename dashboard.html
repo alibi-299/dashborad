@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard | Overview</title>
+    <link rel="stylesheet" href="dashboard.design.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <nav class="sidenav" aria-label="Main navigation">
+        <div class="brand">
+          <span class="brand-mark">D</span><span>dashboard</span>
+        </div>
+        <p class="nav-label">Main</p>
+        <a href="#overview" class="nav-link active"
+          ><span class="nav-icon">◈</span>Dashboard</a
+        >
+        <a href="#contracts" class="nav-link"
+          ><span class="nav-icon">▤</span>Contracts</a
+        >
+        <a href="#checklist" class="nav-link"
+          ><span class="nav-icon">✓</span>Checklist</a
+        >
+        <a href="#worksheet" class="nav-link"
+          ><span class="nav-icon">▥</span>Worksheet</a
+        >
+        <a href="#accounts" class="nav-link"
+          ><span class="nav-icon">◎</span>Accounts</a
+        >
+        <a href="#office" class="nav-link"
+          ><span class="nav-icon">⌂</span>Office</a
+        >
+        <p class="nav-label help-label">Help</p>
+        <a href="#locations" class="nav-link"
+          ><span class="nav-icon">⌖</span>Locations
+          <span class="nav-count">10</span></a
+        >
+        <a href="#chat" class="nav-link"
+          ><span class="nav-icon">▰</span>Chat
+          <span class="nav-count green">3</span></a
+        >
+        <a href="#retros" class="nav-link"
+          ><span class="nav-icon">↻</span>Retros
+          <span class="nav-count purple">8</span></a
+        >
+        <a href="html code reminder.html" class="nav-link"
+          ><span class="nav-icon">▤</span>HTML Reminder</a
+        >
+        <a href="services.html" class="nav-link"
+          ><span class="nav-icon">⌂</span>Services</a
+        >
+      </nav>
+      <main class="main-content" id="overview">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Workspace overview</p>
+            <h1>Summary</h1>
+          </div>
+          <button class="icon-button" aria-label="More options">⋮</button>
+        </header>
+        <div class="action-row">
+          <button class="primary-button">Create New Offer <span>+</span></button
+          ><button class="ghost-button">Create Re-Statement</button
+          ><button class="ghost-button">Make Application</button>
+        </div>
+        <section class="metrics-row" aria-label="Offer metrics">
+          <article class="metric-card">
+            <div>
+              <span class="metric-value">10</span
+              ><span class="metric-label">Offers to Review</span>
+            </div>
+            <span class="metric-symbol">⌁</span>
+          </article>
+          <article class="metric-card selected">
+            <div>
+              <span class="metric-value">03</span
+              ><span class="metric-label">Offers in Progress</span>
+            </div>
+            <span class="metric-symbol">♧</span>
+          </article>
+          <article class="metric-card warning">
+            <div>
+              <span class="metric-value">06</span
+              ><span class="metric-label">Pending Checks</span>
+            </div>
+            <span class="metric-symbol">⌛</span>
+          </article>
+        </section>
+        <section class="panel chart-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Activity chart</p>
+              <h2>Offer activity</h2>
+            </div>
+            <button class="filter-button">Last 30 days <span>⌄</span></button>
+          </div>
+          <div class="chart-wrap">
+            <div class="y-axis">
+              <span>12</span><span>8</span><span>4</span><span>0</span>
+            </div>
+            <svg
+              class="activity-chart"
+              viewBox="0 0 700 205"
+              role="img"
+              aria-label="Offer activity trend"
+            >
+              <defs>
+                <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#3f8dff" stop-opacity=".32" />
+                  <stop offset="1" stop-color="#3f8dff" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+              <path
+                class="area"
+                d="M0 166 C34 181 52 145 85 160 S132 103 165 122 S216 182 245 170 S277 40 310 72 S344 161 376 133 S414 71 445 109 S482 177 513 133 S550 88 580 127 S629 150 700 130 V205 H0Z"
+              />
+              <path
+                class="line"
+                d="M0 166 C34 181 52 145 85 160 S132 103 165 122 S216 182 245 170 S277 40 310 72 S344 161 376 133 S414 71 445 109 S482 177 513 133 S550 88 580 127 S629 150 700 130"
+              />
+              <circle class="chart-dot" cx="310" cy="72" r="5" />
+              <line class="guide" x1="310" y1="72" x2="310" y2="205" />
+            </svg>
+            <div class="chart-tooltip"><b>11.2K</b><span>Mar 10</span></div>
+          </div>
+        </section>
+        <section class="lower-grid">
+          <article class="panel ratio-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Combined ratio</p>
+                <h2>Performance</h2>
+              </div>
+              <button class="icon-button" aria-label="More options">⋮</button>
+            </div>
+            <div class="gauge-row">
+              <div class="gauge">
+                <div class="gauge-inner">
+                  <small>Year</small><strong>1</strong>
+                </div>
+              </div>
+              <div class="gauge second">
+                <div class="gauge-inner">
+                  <small>Year</small><strong>2</strong>
+                </div>
+              </div>
+            </div>
+            <div class="legend">
+              <span><i class="cyan"></i>65%</span
+              ><span><i class="blue"></i>41%</span
+              ><span><i class="cyan"></i>65%</span
+              ><span><i class="blue"></i>61%</span>
+            </div>
+          </article>
+          <article class="panel distribution-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Credit distribution</p>
+                <h2>Credit score</h2>
+              </div>
+              <button class="icon-button" aria-label="More options">⋮</button>
+            </div>
+            <div class="single-gauge">
+              <div class="gauge-inner"><strong>80%</strong></div>
+            </div>
+            <div class="legend centered">
+              <span><i class="blue"></i>60%</span
+              ><span><i class="cyan"></i>70%</span>
+            </div>
+          </article>
+        </section>
+      </main>
+      <aside class="right-sidebar" aria-label="Client details">
+        <div class="profile">
+          <div class="avatar">JS</div>
+          <span>James Smith</span><span class="notification">2</span>
+        </div>
+        <div class="client-card">
+          <div class="client-title">
+            <div>
+              <p class="eyebrow">Deal in progress</p>
+              <h2>D189810</h2>
+            </div>
+            <span class="edit">↗</span>
+          </div>
+          <dl>
+            <div>
+              <dt>Deal Name</dt>
+              <dd>Dummy Deal</dd>
+            </div>
+            <div class="two-col">
+              <div>
+                <dt>Home State</dt>
+                <dd>New Jersey</dd>
+              </div>
+              <div>
+                <dt>Domicile</dt>
+                <dd>United States</dd>
+              </div>
+            </div>
+            <div class="two-col">
+              <div>
+                <dt>Inspection Date</dt>
+                <dd>06-Dec-2017</dd>
+              </div>
+              <div>
+                <dt>Expiry Date</dt>
+                <dd>06-16-2017</dd>
+              </div>
+            </div>
+            <div class="two-col">
+              <div>
+                <dt>Deal Type</dt>
+                <dd>Treaty</dd>
+              </div>
+              <div>
+                <dt>Main Line</dt>
+                <dd>Property</dd>
+              </div>
+            </div>
+            <div>
+              <dt>Insured Name</dt>
+              <dd>ABC Corporation</dd>
+            </div>
+            <div>
+              <dt>Insured Address</dt>
+              <dd>123, North Main St</dd>
+            </div>
+            <div>
+              <dt>Broker Company</dt>
+              <dd>AAA Risk Management</dd>
+            </div>
+            <div>
+              <dt>Broker Contact</dt>
+              <dd>(408) 266 8221</dd>
+            </div>
+          </dl>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
